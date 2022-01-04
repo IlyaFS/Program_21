@@ -14,6 +14,7 @@ namespace Program_21
         public static int rows = garden.GetUpperBound(0) + 1;
         public static int columns = garden.Length / rows;
 
+
         static void Main(string[] args)
         {
             Thread s1 = new Thread(sad1);
@@ -30,6 +31,7 @@ namespace Program_21
                 for (int j = 0; j < columns; j++)
                 {
                     Console.Write(garden[i, j] + " ");
+                    Thread.Sleep(50);
                 }
                 Console.WriteLine();
             }

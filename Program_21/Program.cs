@@ -9,11 +9,9 @@ namespace Program_21
 {
     internal class Program
     {
-
         public static int[,] garden = new int[10, 10];
         public static int rows = garden.GetUpperBound(0) + 1;
         public static int columns = garden.Length / rows;
-
 
         static void Main(string[] args)
         {
@@ -30,7 +28,7 @@ namespace Program_21
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    Console.Write(garden[i, j] + " ");
+                    Console.Write(garden[i, j] + "\u2591");
                     Thread.Sleep(50);
                 }
                 Console.WriteLine();
@@ -53,6 +51,7 @@ namespace Program_21
 
         public static void sad2()
         {
+  
             for (int i = rows - 1; i > 0; i--)
             {
                 for (int j = columns - 1; j > 0; j--)
